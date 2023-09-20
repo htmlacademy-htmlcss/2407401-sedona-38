@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Марина Стратийчук](https://up.htmlacademy.ru/htmlcss/38/user/2407401).
-* Наставник: `Неизвестно`.
+* Наставник:[Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
