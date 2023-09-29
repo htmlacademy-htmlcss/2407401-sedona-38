@@ -29,13 +29,103 @@
         <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
       </li>
       <li class="navigation-item">
-        <a class="button navigation-link" href="#">Хочу сюда!</a>
+        <a class="button" href="#">Хочу сюда!</a>
       </li>
     </ul>
     </nav>
   </header>
-
-
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+      <h3 class="visually-hidden">Список товаров с фильтрами</h3>
+      <form class="comfort-filter" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="comfort-group">
+        <legend class="comfort-group-title">Инфраструктура:</legend>
+        <ul class="comfort-list">
+          <li class="comfort-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Pool" checked>
+              Бассейн
+            </label>
+          </li>
+          <li class="comfort-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Parking" checked>
+              Парковка
+            </label>
+          </li>
+          <li class="comfort-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              Wi-Fi
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="comfort-group">
+        <legend class="comfort-group-title">Тип жилья:</legend>
+        <ul class="comfort-list">
+          <li class="comfort-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="control-product" value="Hotel" checked>
+              Гостиница
+            </label>
+          </li>
+          <li class="comfort-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="control-product" value="Motel">
+              Мотель
+            </label>
+          </li>
+          <li class="comfort-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="control-product" value="Apartments">
+              Апартаменты
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="comfort-group">
+        <legend class="comfort-group-title">Стоимость, ₽:</legend>
+        <label class="price">
+          <input type="text" name="input-price" value="0" placeholder="от">
+          <input type="text" name="input-price" value="9000" placeholder="до">
+        </label>
+        <button class="button button-comfort" type="submit">Применить</button>
+        <button class="button button-close" type="reset">Сбросить</button>
+      </fieldset>
+    </form>
+    </header>
+    <section class="catalog">
+      <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+      <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+        <select name="rating">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <a href="#" class="button button-view button-view-current">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button button-view" href="#">
+          <span class="visually-hidden">Показать крупные блоки</span>
+        </a>
+        <a class="button button-view" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+      </form>
+    </section>
+  </main>
   <section class="subscribe-catalog">
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -49,7 +139,7 @@
 </main>
 <footer class="page-footer">
   <section class="footer-social">
-    <h2 class="visually_hidden">Социальные сети</h2>
+    <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="social-list">
       <li class="social-item">
         <a class="social-link" href="https://vk.com/htmlacademy">
@@ -69,11 +159,11 @@
     </ul>
   </section>
   <section class="footer-contacts">
-    <h2 class="visually_hidden">Контакты</h2>
+    <h2 class="visually-hidden">Контакты</h2>
     <a class="contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
   </section>
   <section class="footer-creator">
-    <h2 class="visually_hidden">Авторство</h2>
+    <h2 class="visually-hidden">Авторство</h2>
     <a class="creator-link" href="https://htmlacademy.ru/">
       <img class="creater-logo" src="#" alt="Логотип HTML Academy">
     </a>
