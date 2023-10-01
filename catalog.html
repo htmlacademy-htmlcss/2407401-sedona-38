@@ -47,7 +47,7 @@
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
-      <h3 class="visually-hidden">Список товаров с фильтрами</h3>
+      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
       <form class="comfort-filter" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="comfort-group">
         <legend class="comfort-group-title">Инфраструктура:</legend>
@@ -97,8 +97,10 @@
       </fieldset>
       <fieldset class="comfort-group">
         <legend class="comfort-group-title">Стоимость, ₽:</legend>
-        <label class="price">
+        <label class="group-price">
           <input type="text" name="input-price" value="0" placeholder="от">
+        </label>
+        <label class="group-price">
           <input type="text" name="input-price" value="9000" placeholder="до">
         </label>
         <button class="button button-comfort" type="submit">Применить</button>
@@ -108,8 +110,7 @@
     </header>
     <section class="catalog">
       <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-      <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
-        <select name="rating">
+        <select class="catalog-select" name="rating" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
@@ -123,9 +124,80 @@
         <a class="button button-view" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
-      </form>
+        <ul class="catalog-list">
+          <li class="catalog-card">
+          <a class="catalog-link" href="#">
+            <img class="catalog-img" src="#" alt="Вид на звездное небо из ущелья">
+            <h3 class="catalog-title">Amara Resort & Spa</h3>
+        </a>
+        <p class="catalog-text">
+          Гостиница <span class="catalog-price">От 4000 ₽</span>
+        </p>
+        <a class="button" href="#">подробнее</a>
+        <button class="button button-select" type="submit">в избранное</button>
+        <img class="rating" src="#" alt="Четырехзвездочный отель">
+        <p class="rating-text">Рейтинг: 8,5</p>
+        </li>
+        <li class="catalog-card">
+          <a class="catalog-link" href="#">
+            <img class="catalog-img" src="#" alt="Вид на горы после дождя">
+            <h3 class="catalog-title">Villas at Poco Diablo</h3>
+        </a>
+        <p class="catalog-text">
+          Гостиница <span class="catalog-price">От 5000 ₽</span>
+        </p>
+        <a class="button" href="#">подробнее</a>
+        <button class="button button-select" type="submit">в избранное</button>
+        <img class="rating" src="#" alt="Четырехзвездочный отель">
+        <p class="rating-text">Рейтинг: 9,2</p>
+        </li>
+        <li class="catalog-card">
+          <a class="catalog-link" href="#">
+            <img class="catalog-img" src="#" alt="Вид на горы на закате">
+            <h3 class="catalog-title">Desert Quail Inn</h3>
+        </a>
+        <p class="catalog-text">
+          Гостиница <span class="catalog-price">От 2500 ₽</span>
+        </p>
+        <a class="button" href="#">подробнее</a>
+        <button class="button button-select" type="submit">в избранное</button>
+        <img class="rating" src="#" alt="Треххзвездочный отель">
+        <p class="rating-text">Рейтинг: 6,9</p>
+        </li>
+        <li class="catalog-card">
+          <a class="catalog-link" href="#">
+            <img class="catalog-img" src="#" alt="Вид на горы ночью">
+            <h3 class="catalog-title">GreenTree Inn</h3>
+        </a>
+        <p class="catalog-text">
+          Гостиница <span class="catalog-price">От 1500 ₽</span>
+        </p>
+        <a class="button" href="#">подробнее</a>
+        <button class="button button-select" type="submit">в избранное</button>
+        <img class="rating" src="#" alt="Двухзвездочный отель">
+        <p class="rating-text">Рейтинг: 5,0</p>
+      </ul>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
     </section>
-  </main>
   <section class="subscribe-catalog">
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
