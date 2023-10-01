@@ -23,10 +23,15 @@
     </ul>
     <ul class="navigation-link navigation-user">
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        <a class="navigation-link" href="#">
+          <img class="navigation-img" src="#" alt="Поиск">
+        </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+        <a class="navigation-link" href="#">
+          <img class="navigation-img" src="#" alt="Избранное">
+          <span class="navigation-select">12</span>
+        </a>
       </li>
     </ul>
     <a class="button" href="#">Хочу сюда!</a>
@@ -38,7 +43,7 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
-            <span class="visually-hidden">Главная</span>
+            <img class="breadcrumbs-img" src="#" alt="Главная">
           </a>
         </li>
         <li class="breadcrumbs-item">
@@ -101,8 +106,8 @@
         <label class="group-price">
           <input type="text" name="input-price" value="9000" placeholder="до">
         </label>
-        <button class="button button-comfort" type="submit">Применить</button>
-        <button class="button button-close" type="reset">Сбросить</button>
+        <button class="button button-sub" type="submit">Применить</button>
+        <button class="button button-sub none" type="reset">Сбросить</button>
       </fieldset>
     </form>
     </header>
@@ -114,65 +119,73 @@
           <option value="popular">Сначала популярные</option>
         </select>
         <a href="#" class="button button-view button-view-current">
-          <span class="visually-hidden">Показать карточки</span>
+          <img class="catalog-select" src="#" alt="Показать карточки">
         </a>
         <a class="button button-view" href="#">
-          <span class="visually-hidden">Показать крупные блоки</span>
+          <img class="catalog-select" src="#" alt="Показать крупные блоки">
         </a>
         <a class="button button-view" href="#">
-          <span class="visually-hidden">Показать список</span>
+          <img class="catalog-select" src="#" alt="Показать список">
         </a>
         <ul class="catalog-list">
           <li class="catalog-card">
           <a class="catalog-link" href="#">
             <img class="catalog-img" src="#" alt="Вид на звездное небо из ущелья">
-            <h3 class="catalog-title">Amara Resort & Spa</h3>
         </a>
+        <a class="catalog-link" href="#">
+          <h3 class="catalog-title">Amara Resort & Spa</h3>
+      </a>
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 4000 ₽</span>
         </p>
         <a class="button" href="#">подробнее</a>
-        <button class="button button-select" type="submit">в избранное</button>
-        <img class="rating" src="#" alt="Четырехзвездочный отель">
+        <button class="button button-sub" type="submit">в избранное</button>
+        <p class="stars"><span class="visually-hidden">Четырехзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 8,5</p>
         </li>
         <li class="catalog-card">
           <a class="catalog-link" href="#">
             <img class="catalog-img" src="#" alt="Вид на горы после дождя">
-            <h3 class="catalog-title">Villas at Poco Diablo</h3>
         </a>
+        <a class="catalog-link" href="#">
+          <h3 class="catalog-title">Villas at Poco Diablo</h3>
+      </a>
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 5000 ₽</span>
         </p>
         <a class="button" href="#">подробнее</a>
-        <button class="button button-select" type="submit">в избранное</button>
-        <img class="rating" src="#" alt="Четырехзвездочный отель">
+        <button class="button button-current" type="submit">в избранном</button>
+        <p class="stars"><span class="visually-hidden">Четырехзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 9,2</p>
         </li>
         <li class="catalog-card">
           <a class="catalog-link" href="#">
             <img class="catalog-img" src="#" alt="Вид на горы на закате">
-            <h3 class="catalog-title">Desert Quail Inn</h3>
         </a>
+        <a class="catalog-link" href="#">
+          <h3 class="catalog-title">Desert Quail Inn</h3>
+      </a>
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 2500 ₽</span>
         </p>
         <a class="button" href="#">подробнее</a>
-        <button class="button button-select" type="submit">в избранное</button>
-        <img class="rating" src="#" alt="Треххзвездочный отель">
+        <button class="button button-sub" type="submit">в избранное</button>
+        <p class="stars"><span class="visually-hidden">Трехзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 6,9</p>
         </li>
         <li class="catalog-card">
           <a class="catalog-link" href="#">
             <img class="catalog-img" src="#" alt="Вид на горы ночью">
-            <h3 class="catalog-title">GreenTree Inn</h3>
         </a>
+        <a class="catalog-link" href="#">
+          <h3 class="catalog-title">GreenTree Inn</h3>
+      </a>
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 1500 ₽</span>
         </p>
         <a class="button" href="#">подробнее</a>
-        <button class="button button-select" type="submit">в избранное</button>
-        <img class="rating" src="#" alt="Двухзвездочный отель">
+        <button class="button button-sub" type="submit">в избранное</button>
+        <p class="stars"><span class="visually-hidden">Двухзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 5,0</p>
       </ul>
       <ul class="pagination">
@@ -196,14 +209,14 @@
         </li>
       </ul>
     </section>
-  <section class="subscribe-catalog">
+  <section class="subscribe-inner">
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden">Ваш e-mail
         <input class="email" type="email" placeholder="Ваш e-mail" name="subscribe-email">
       </label>
-      <button class="button subscribe-button" type="submit">Подписаться</button>
+      <button class="button button-sub" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
@@ -212,18 +225,18 @@
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="social-list">
       <li class="social-item">
+        <img class="social-img" src="#" alt="Вконтакте">
         <a class="social-link" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social-item">
+        <img class="social-img" src="#" alt="Телеграм">
         <a class="social-link" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="social-item">
+        <img class="social-img" src="#" alt="Youtube">
         <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Youtube</span>
         </a>
       </li>
     </ul>

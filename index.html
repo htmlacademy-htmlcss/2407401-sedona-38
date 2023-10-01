@@ -7,12 +7,12 @@
   <body>
 <header class="page-header">
   <nav class="navigation">
-  <a class="link-logo" href="index.html">
-  <img class="logo-header" src="#" alt="Логотип города Седона">
+  <a class="link-logo">
+  <img class="logo-header" src="images/logo.svg" width="138" height="64" alt="Логотип города Седона">
   </a>
   <ul class="navigation-list">
     <li class="navigation-item">
-      <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+      <a class="navigation-link navigation-link-current">Главная</a>
     </li>
     <li class="navigation-item">
       <a class="navigation-link" href="#">О Седоне</a>
@@ -23,10 +23,15 @@
   </ul>
   <ul class="navigation-link navigation-user">
     <li class="navigation-item">
-      <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+      <a class="navigation-link" href="#">
+        <img class="navigation-img" src="images/search.svg" width="20" height="20" alt="Поиск">
+      </a>
     </li>
     <li class="navigation-item">
-      <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span> <span class="navigation-select">12</span> </a>
+      <a class="navigation-link" href="#">
+        <img class="navigation-img" src="images/heart.svg" width="20" height="20" alt="Избранное">
+        <span class="navigation-select">12</span>
+      </a>
     </li>
   </ul>
   <a class="button navigation-link" href="#">Хочу сюда!</a>
@@ -35,7 +40,7 @@
 <main class="main-index">
   <section class="hero">
   <h1 class="visually-hidden">Город Седона</h1>
-  <img class="logo" src="#" alt="Welcome, to the gorgeous Sedona. «Because the Grand Canyon sucks!">
+  <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Welcome, to the gorgeous Sedona. «Because the Grand Canyon sucks!»">
   </section>
   <section class="advantages">
     <p class="slogan">Седона — небольшой городок в Аризоне,
@@ -43,26 +48,26 @@
       <p class="text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <ul class="advantages-list">
         <li class="advantages-item">
-          <h3 class="advantages-title">Настоящий городок</h3>
-          <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="advantages-img" src="#" alt="Дом в Седоне">
+          <h3 class="advantages-title light">Настоящий городок</h3>
+          <p class="advantages-text light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img class="advantages-img" src="images/house.jpg" width="800" height="385" alt="Дом в Седоне">
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-light">
           <h3 class="advantages-title">Небольшая площадь</h3>
           <p class="advantages-text">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-dark">
           <h3 class="advantages-title">Красивая дорога</h3>
           <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item  advantages-light">
           <h3 class="advantages-title">Мало туристов</h3>
           <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="advantages-item">
-          <img class="advantages-img" src="#" alt="Мост Дьявола">
-          <h3 class="advantages-title">Там есть мост дьявола</h3>
-          <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <img class="advantages-img" src="images/bridge.jpg" width="800" height="385" alt="Мост Дьявола">
+          <h3 class="advantages-title light">Там есть мост дьявола</h3>
+          <p class="advantages-text light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
       </ul>
   </section>
@@ -91,13 +96,13 @@
     <a class="button" href="catalog.html">Поиск гостиницы в Седоне</a>
   </section>
   <section class="subscribe">
-    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-    <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <h2 class="subscribe-title light">Подпишитесь на рассылку</h2>
+    <p class="subscribe-text light">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden">Ваш e-mail
         <input class="email" type="email" placeholder="Ваш e-mail" name="subscribe-email">
       </label>
-      <button class="button subscribe-button" type="submit">Подписаться</button>
+      <button class="button button-sub" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
@@ -106,18 +111,18 @@
     <h2 class="visually_hidden">Социальные сети</h2>
     <ul class="social-list">
       <li class="social-item">
+        <img class="social-img" src="images/vk.svg" width="24" height="14" alt="Вконтакте">
         <a class="social-link" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social-item">
+        <img class="social-img" src="images/tg.svg" width="18" height="16" alt="Телеграм">
         <a class="social-link" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="social-item">
+        <img class="social-img" src="images/yt.svg" width="22" height="17" alt="Youtube">
         <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Youtube</span>
         </a>
       </li>
     </ul>
@@ -129,7 +134,7 @@
   <section class="footer-creator">
     <h2 class="visually_hidden">Авторство</h2>
     <a class="creator-link" href="https://htmlacademy.ru/">
-      <img class="creater-logo" src="#" alt="Логотип HTML Academy">
+      <img class="creater-logo" src="images/html-academy.svg" width="115" height="33" alt="Логотип HTML Academy">
     </a>
   </section>
 </footer>
