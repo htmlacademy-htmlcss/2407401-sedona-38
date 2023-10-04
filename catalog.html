@@ -34,7 +34,7 @@
         </a>
       </li>
     </ul>
-    <a class="button" href="#">Хочу сюда!</a>
+    <a class="button button-transit" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main class="main-inner">
@@ -106,8 +106,8 @@
         <label class="group-price">
           <input type="text" name="input-price" value="9000" placeholder="до">
         </label>
-        <button class="button button-sub" type="submit">Применить</button>
-        <button class="button button-sub none" type="reset">Сбросить</button>
+        <button class="button button-send" type="submit">Применить</button>
+        <button class="button button-none" type="reset">Сбросить</button>
       </fieldset>
     </form>
     </header>
@@ -138,8 +138,8 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 4000 ₽</span>
         </p>
-        <a class="button" href="#">подробнее</a>
-        <button class="button button-sub" type="submit">в избранное</button>
+        <a class="button button-transit" href="#">подробнее</a>
+        <button class="button button-send" type="submit">в избранное</button>
         <p class="stars"><span class="visually-hidden">Четырехзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 8,5</p>
         </li>
@@ -153,7 +153,7 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 5000 ₽</span>
         </p>
-        <a class="button" href="#">подробнее</a>
+        <a class="button button-transit" href="#">подробнее</a>
         <button class="button button-current" type="submit">в избранном</button>
         <p class="stars"><span class="visually-hidden">Четырехзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 9,2</p>
@@ -168,8 +168,8 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 2500 ₽</span>
         </p>
-        <a class="button" href="#">подробнее</a>
-        <button class="button button-sub" type="submit">в избранное</button>
+        <a class="button button-transit" href="#">подробнее</a>
+        <button class="button button-send" type="submit">в избранное</button>
         <p class="stars"><span class="visually-hidden">Трехзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 6,9</p>
         </li>
@@ -183,8 +183,8 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 1500 ₽</span>
         </p>
-        <a class="button" href="#">подробнее</a>
-        <button class="button button-sub" type="submit">в избранное</button>
+        <a class="button button-transit" href="#">подробнее</a>
+        <button class="button button-send" type="submit">в избранное</button>
         <p class="stars"><span class="visually-hidden">Двухзвездочный отель</span></p>
         <p class="rating-text">Рейтинг: 5,0</p>
       </ul>
@@ -213,10 +213,9 @@
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="visually-hidden">Ваш e-mail
-        <input class="email" type="email" placeholder="Ваш e-mail" name="subscribe-email">
-      </label>
-      <button class="button button-sub" type="submit">Подписаться</button>
+      <label for="email-field" class="visually-hidden">Ваш e-mail</label>
+        <input class="email" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="email-field">
+      <button class="button button-send" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
@@ -225,18 +224,18 @@
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="social-list">
       <li class="social-item">
-        <img class="social-img" src="images/footer/vk.svg" width="24" height="14" alt="Вконтакте">
         <a class="social-link" href="https://vk.com/htmlacademy">
+          <img class="social-img" src="images/footer/vk.svg" width="24" height="14" alt="Вконтакте">
         </a>
       </li>
       <li class="social-item">
-        <img class="social-img" src="images/footer/tg.svg" width="18" height="16" alt="Телеграм">
         <a class="social-link" href="https://t.me/htmlacademy">
+          <img class="social-img" src="images/footer/tg.svg" width="18" height="16" alt="Телеграм">
         </a>
       </li>
       <li class="social-item">
-        <img class="social-img" src="images/footer/yt.svg" width="22" height="17" alt="Youtube">
         <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <img class="social-img" src="images/footer/yt.svg" width="22" height="17" alt="Youtube">
         </a>
       </li>
     </ul>
