@@ -17,7 +17,10 @@ font-family: "PT Sans", sans-serif;
 font-size: 22px;
 line-height: 26px;
 color: #333333;
-background-color: #FFFFFF;
+background-color: #F2F2F2;
+}
+.container {
+  background-color: #FFFFFF;
 }
 .page-header{
   color: #000000;
@@ -45,7 +48,8 @@ text-transform: uppercase;
 text-decoration: none;
 text-align: center;
 border-radius: 4px;
-border: 0;
+border: none;
+cursor: pointer;
 }
 .button-transit {
   background-color: #756157;
@@ -62,8 +66,8 @@ border: 0;
   background-color: #7DB54F;
 }
 .hero {
-  background-image: url("../images/background/main-background.jpg");
-  background-size: 100% auto;
+  background-image:url("../images/background/main-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #83B3D3;
   min-height: 485px;
@@ -153,7 +157,8 @@ background-color: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  opacity: 0.6;
+  background: #F2F2F2;
+  border: none;
 }
 .contacts-link {
   font-size: 40px;
