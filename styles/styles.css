@@ -66,6 +66,7 @@ border: 0;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #83B3D3;
+  min-height: 485px;
 }
 .slogan {
 font-size: 30px;
