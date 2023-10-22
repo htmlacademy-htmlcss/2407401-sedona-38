@@ -432,13 +432,19 @@ background-color: inherit;
   margin-bottom: 40px;
 }
 .catalog-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 40px 70px;
   list-style: none;
 }
 .catalog-card {
   max-width: 340px;
   min-height: 438px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .catalog-title-search {
   font-size: 30px;
