@@ -8,10 +8,10 @@
 <body>
   <div class="container">
   <header class="page-header">
-    <nav class="navigation">
     <a class="link-logo" href="index.html">
     <img class="logo-header" src="images/header/logo.svg" width="140" height="70" alt="Логотип города Седона">
     </a>
+    <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link" href="index.html">Главная</a>
@@ -23,6 +23,7 @@
         <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
       </li>
     </ul>
+  </nav>
     <ul class="navigation-user">
       <li class="navigation-item-user">
         <a class="navigation-link" href="#">
@@ -35,9 +36,10 @@
           <span class="navigation-select">12</span>
         </a>
       </li>
+      <li class="navigation-item-user navigation-item-user-button">
+        <a class="button button-transit button-navigation" href="#">Хочу сюда!</a>
+      </li>
     </ul>
-    <a class="button button-transit" href="#">Хочу сюда!</a>
-    </nav>
   </header>
   <main class="main-inner">
     <header class="inner-header">
@@ -108,12 +110,18 @@
         <label class="group-price">
           <input class="input-price" type="text" name="input-price" value="9000" placeholder="до" style="font-size: 18px; line-height: 24px; font-weight: 700;">
         </label>
-        <button class="button button-send" type="submit">Применить</button>
-        <button class="button button-none" type="reset">Сбросить</button>
       </fieldset>
-    </form>
+      <ul class="comfort-button-list">
+      <li class="comfort-button-item">
+        <button class="button button-send" type="submit">Применить</button>
+      </li>
+      <li class="comfort-button-item">
+        <button class="button button-none" type="reset">Сбросить</button>
+      </li>
+    </ul>
+  </form>
     </header>
-    <section class="catalog">
+    <section class="catalog-prewiev">
       <h2 class="catalog-title-search">Найдено гостиниц: <span class="number-found">38</span> </h2>
       <select class="catalog-select" name="rating" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -129,6 +137,8 @@
         <a class="button-view" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </section>
+      <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-card">
           <a class="catalog-link" href="#">
@@ -190,7 +200,9 @@
         <img class="stars" src="images/hotel/stars-3.svg" alt="Двухзвездочный отель">
         <p class="rating-text">Рейтинг: 5,0</p>
       </ul>
-      <ul class="pagination">
+      </section>
+      <section class="pagination">
+      <ul class="pagination-list">
         <li class="pagination-item pagination-current">
           <a class="pagination-link">1</a>
         </li>
@@ -212,8 +224,8 @@
       </ul>
     </section>
   <section class="subscribe-inner">
-    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-    <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <h2 class="slogan-title subscribe-title">Подпишитесь на рассылку</h2>
+    <p class="slogan-text subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="email-field" class="visually-hidden">Ваш e-mail</label>
         <input class="email" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="email-field">
