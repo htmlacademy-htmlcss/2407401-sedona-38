@@ -115,9 +115,9 @@ padding: 8px 50px;
   flex-grow: 1;
 }
 .hero {
-  background-image:url("../images/background/main-background.jpg");
-  background-size: cover;
+  background-image:url("../images/background/poligonal.svg"), url("../images/background/main-background.jpg");
   background-repeat: no-repeat;
+  background-position: bottom center, top center;
   background-color: #83B3D3;
   min-height: 485px;
   margin: 0 auto;
@@ -259,12 +259,11 @@ background-color: inherit;
     margin: 0 auto;
   }
 .search {
-  min-height: 406px;
+  padding: 96px 0;
 }
 .slogan-search {
   max-width: 297px;
   margin: 0 auto;
-  padding-top: 96px;
   padding-bottom: 20px;
 }
 .text-search {
@@ -276,22 +275,21 @@ background-color: inherit;
   display: block;
   width: 376px;
   margin: 0 auto;
-  margin-bottom: 96px;
 }
 .subscribe {
-  min-height: 400px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
   background-color: #83B3D3;
   background-image: url("../images/background/subscribe-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   }
-  .subscribe-title {
-    max-width: 404px;
-    color: #000000;
-    margin: 0 auto;
-    padding-top: 96px;
-    padding-bottom: 20px;
+.subscribe-title {
+  max-width: 404px;
+  color: #000000;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 .subscribe-text {
   max-width: 475px;
@@ -302,7 +300,6 @@ background-color: inherit;
 .subscribe-form {
   width: 684px;
   margin: 0 auto;
-  padding-bottom: 104px;
   }
 .light {
   color: #FFFFFF;
@@ -317,17 +314,31 @@ background-color: inherit;
 .page-footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  padding: 0 70px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .social-list {
   display: flex;
   justify-content: space-around;
   margin: 0;
-  margin-left: 70px;
-  margin-top: 40px;
-  margin-bottom: 30px;
   padding: 0;
   list-style: none;
+}
+.social-item {
+  width: 47px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contacts {
+  display: flex;
+  align-items: center;
+}
+.footer-creator {
+  display: flex;
+  align-items: center;
 }
 .contacts-link {
   font-size: 40px;
@@ -367,7 +378,7 @@ background-color: inherit;
   padding: 0;
 }
 .breadcrumbs-arrow::after{
-  content: url("../images/breadcrumbs.svg");
+  content: url("../images/background/breadcrumbs.svg");
   padding: 0 10px;
 }
 .breadcrumbs-link {
@@ -427,9 +438,42 @@ background-color: inherit;
 }
 .catalog-prewiev {
   display: flex;
+  justify-content: space-between;
   margin: 70px;
   margin-top: 50px;
   margin-bottom: 40px;
+}
+.view-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.view-item-center {
+  margin: 0 8px;
+}
+.button-view-icon {
+  content: url("../images/background/icon.svg");
+  padding: 16px 17px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+}
+.button-view-current {
+  border-radius: 4px;
+  border: 2px solid #000000;
+}
+.button-view-object {
+  content: url("../images/background/object.svg");
+  padding: 16px 17px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+}
+.button-view-list {
+  content: url("../images/background/list.svg");
+  padding: 16px 17px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
 }
 .catalog-list {
   display: flex;
@@ -447,13 +491,18 @@ background-color: inherit;
   margin-bottom: 20px;
 }
 .catalog-title-search {
+  display: flex;
+  align-items: center;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding-right: 200px;
 }
 .catalog-select {
+  display: flex;
   font-size: 18px;
   line-height: 21px;
 }
@@ -477,6 +526,11 @@ background-color: inherit;
   text-transform: uppercase;
   background-color: #F2F2F2;
 }
+.pagination {
+  margin: 70px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
 .pagination-list {
   display: flex;
   margin: 0;
@@ -492,6 +546,8 @@ background-color: inherit;
   background-color: #82B3D3;
   border-radius: 4px;
   text-align: center;
+  margin: 0 8px;
+  padding: 12px 24px;
 }
 .pagination-link {
   color: inherit;
@@ -505,7 +561,19 @@ background-color: inherit;
   color: #000000;
   background-color: #FFFFFF;
 }
+.subscribe-inner {
+  background-image: none;
+  background-color: #FFFFFF;
+}
 .visually-hidden {
-  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

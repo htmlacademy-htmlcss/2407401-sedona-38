@@ -128,15 +128,23 @@
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <a href="#" class="button-view button-view-current">
+        <ul class="view-list">
+          <li class="view-item">
+        <a href="#" class="button-view-icon button-view-current">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="button-view" href="#">
+      </li>
+      <li class="view-item view-item-center">
+        <a class="button-view-object" href="#">
           <span class="visually-hidden">Показать крупные блоки</span>
         </a>
-        <a class="button-view" href="#">
+      </li>
+        <li class="view-item">
+        <a class="button-view-list" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </li>
+      </ul>
       </section>
       <section class="catalog">
         <ul class="catalog-list">
@@ -150,8 +158,8 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 4000 ₽</span>
         </p>
-        <a class="button button-transit" href="#">подробнее</a>
-        <button class="button button-send" type="submit">в избранное</button>
+        <a class="button button-transit" href="#">Подробнее</a>
+        <button class="button button-send" type="submit">В избранное</button>
         <img class="stars" src="images/hotel/stars-4.svg" alt="Четырехзвездочный отель">
         <p class="rating-text">Рейтинг: 8,5</p>
         </li>
@@ -165,8 +173,8 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 5000 ₽</span>
         </p>
-        <a class="button button-transit" href="#">подробнее</a>
-        <button class="button button-current" type="submit">в избранном</button>
+        <a class="button button-transit" href="#">Подробнее</a>
+        <button class="button button-current" type="submit">В избранном</button>
         <img class="stars" src="images/hotel/stars-4.svg" alt="Четырехзвездочный отель">
         <p class="rating-text">Рейтинг: 9,2</p>
         </li>
@@ -180,8 +188,8 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 2500 ₽</span>
         </p>
-        <a class="button button-transit" href="#">подробнее</a>
-        <button class="button button-send" type="submit">в избранное</button>
+        <a class="button button-transit" href="#">Подробнее</a>
+        <button class="button button-send" type="submit">В избранное</button>
         <img class="stars" src="images/hotel/stars-3.svg" alt="Трехзвездочный отель">
         <p class="rating-text">Рейтинг: 6,9</p>
         </li>
@@ -195,8 +203,8 @@
         <p class="catalog-text">
           Гостиница <span class="catalog-price">От 1500 ₽</span>
         </p>
-        <a class="button button-transit" href="#">подробнее</a>
-        <button class="button button-send" type="submit">в избранное</button>
+        <a class="button button-transit" href="#">Подробнее</a>
+        <button class="button button-send" type="submit">В избранное</button>
         <img class="stars" src="images/hotel/stars-3.svg" alt="Двухзвездочный отель">
         <p class="rating-text">Рейтинг: 5,0</p>
       </ul>
@@ -223,7 +231,7 @@
         </li>
       </ul>
     </section>
-  <section class="subscribe-inner">
+  <section class="subscribe subscribe-inner">
     <h2 class="slogan-title subscribe-title">Подпишитесь на рассылку</h2>
     <p class="slogan-text subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
