@@ -95,6 +95,7 @@ padding: 8px 50px;
   padding: 8px 34px;
 }
 .button-transit {
+  padding: 8px 26px;
   background-color: #756157;
 }
 .button-more {
@@ -103,12 +104,14 @@ padding: 8px 50px;
   padding: 8px 50px;
 }
 .button-send {
+  padding: 8px 20px;
   background-color: #82B3D3;
 }
 .button-none {
   background-color: transparent;
 }
 .button-current {
+  padding: 8px 18px;
   background-color: #7DB54F;
 }
 .main-index {
@@ -523,13 +526,24 @@ background-color: inherit;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
-  padding-top: 16px;
+  padding: 16px 0;
+}
+.container-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.stars {
+  margin-top: 16px;
 }
 .rating-text {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
+  margin: 0;
+  margin-top: 16px;
+  padding: 9px 23px;
 }
 .pagination {
   margin: 70px;
