@@ -142,6 +142,7 @@ box-sizing: border-box;
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
 }
 .slogan-title {
   font-size: 30px;
