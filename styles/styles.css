@@ -83,6 +83,7 @@ font-size: 16px;
 line-height: 20px;
 font-weight: 700;
 color: #FFFFFF;
+background-color: #82B3D3;
 text-transform: uppercase;
 text-decoration: none;
 text-align: center;
@@ -90,32 +91,39 @@ border-radius: 4px;
 border: none;
 cursor: pointer;
 padding: 8px 50px;
+box-sizing: border-box;
 }
 .button-navigation {
   padding: 8px 34px;
-}
-.button-transit {
-  padding: 8px 26px;
   background-color: #756157;
 }
-.button-more {
+.button-search {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
+  background-color: #756157;
 }
-.button-send {
-  background-color: #82B3D3;
-}
-.button-apply {
-  padding: 8px 20px;
-  background-color: #82B3D3;
+.button-subscribe {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .button-none {
   background-color: transparent;
+  margin-top: 32px;
 }
-.button-current {
-  padding: 8px 18px;
+.button-more {
+  padding: 8px 26px;
+  background-color: #756157;
+}
+.button-select {
+  padding: 8px 11px;
+}
+.button-select-current {
   background-color: #7DB54F;
+  padding: 8px 10px;
 }
 .main-index {
   flex-grow: 1;
@@ -145,16 +153,18 @@ padding: 8px 50px;
 line-height: 26px;
 text-align: center;
 }
+.advantages {
+  padding-top: 69px;
+}
 .slogan-advantages {
   max-width: 620px;
 margin: 0 auto;
-padding-top: 69px;
-padding-bottom: 25px;
+margin-bottom: 25px;
 }
 .text-advantages {
   max-width: 651px;
 margin: 0 auto;
-padding-bottom: 90px;
+margin-bottom: 90px;
 }
 .advantages-list {
   display: flex;
@@ -203,16 +213,18 @@ text-align: center;
 max-width: 230px;
 margin: 0 auto;
 }
+.service {
+  padding-top: 64px;
+}
 .slogan-service {
   max-width: 505px;
   margin: 0 auto;
-  padding-top: 64px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .text-service {
   max-width: 490px;
   margin: 0 auto;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 .service-list {
   display: flex;
@@ -270,12 +282,12 @@ background-color: inherit;
 .slogan-search {
   max-width: 297px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .text-search {
   max-width: 592px;
   margin: 0 auto;
-  padding-bottom: 54px;
+  margin-bottom: 54px;
 }
 .search a {
   display: block;
@@ -291,19 +303,20 @@ background-color: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   }
-.subscribe-title {
+.slogan-subscribe {
   max-width: 404px;
   color: #000000;
   margin: 0 auto;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
-.subscribe-text {
+.text-subscribe {
   max-width: 475px;
   color: #333333;
   margin: 0 auto;
-  padding-bottom: 54px;
+  margin-bottom: 54px;
   }
 .subscribe-form {
+  display: flex;
   width: 684px;
   margin: 0 auto;
   }
@@ -311,6 +324,7 @@ background-color: inherit;
   color: #FFFFFF;
 }
 .email {
+  width: 452px;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -420,12 +434,12 @@ background-color: inherit;
 .comfort-item:last-child {
   padding: 0;
 }
-.comfort-button-list {
+.comfort-button {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 0;
-  padding: 0;
+  padding-top: 56px;
   list-style: none;
 }
 .comfort-button-item {
@@ -449,12 +463,35 @@ background-color: inherit;
   margin-top: 50px;
   margin-bottom: 40px;
 }
+.catalog-title-search {
+  width: 338px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-right: 200px;
+}
+.catalog-select {
+  width: 292px;
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+}
 .view-list {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: 70px;
+}
+.view-item {
+  width: 48px;
+  height: 48px;
 }
 .view-item-center {
   margin: 0 8px;
@@ -477,9 +514,11 @@ background-color: inherit;
 }
 .button-view-list {
   content: url("../images/background/list.svg");
-  padding: 16px 17px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 .catalog-list {
   display: grid;
@@ -495,22 +534,7 @@ background-color: inherit;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
 }
-.catalog-title-search {
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-  padding-right: 200px;
-}
-.catalog-select {
-  display: flex;
-  font-size: 18px;
-  line-height: 21px;
-}
+
 .catalog-title {
   font-size: 24px;
   line-height: 28px;
@@ -532,12 +556,13 @@ background-color: inherit;
   padding: 16px 0;
 }
 .container-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 140px);
+  align-items: start;
 }
 .stars {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .rating-text {
   font-size: 16px;
@@ -545,8 +570,8 @@ background-color: inherit;
   text-transform: uppercase;
   background-color: #F2F2F2;
   margin: 0;
-  margin-top: 16px;
-  padding: 9px 23px;
+  padding: 9px 22px;
+  border-radius: 4px;
 }
 .pagination {
   margin: 70px;
@@ -560,6 +585,8 @@ background-color: inherit;
   list-style: none;
 }
 .pagination-item {
+  width: 60px;
+  height: 60px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -567,11 +594,15 @@ background-color: inherit;
   color: #FFFFFF;
   background-color: #82B3D3;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 0 8px;
-  padding: 12px 24px;
+  box-sizing: border-box;
 }
 .pagination-link {
+
   color: inherit;
   text-decoration: none;
 }
