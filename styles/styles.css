@@ -35,15 +35,20 @@ background-color: #F2F2F2;
 .page-header {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 64px;
 }
 .link-logo {
-  margin: 0;
   margin-left: 70px;
   margin-right: 30px;
   position: relative;
-  top:0;
-  z-index: 2;
+  top: -2px;
+  width: 140px;
+  height: 70px;
+  margin-bottom: -8px;
 }
 .navigation-list {
   display: flex;
@@ -234,6 +239,9 @@ font-family: "PT Sans", sans-serif;
   flex-grow: 1;
 }
 .hero {
+  position: relative;
+  z-index: 1;
+  top: -2px;
   background-image:url("../images/background/poligonal.svg"), url("../images/background/main-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom center, top center;
@@ -440,6 +448,10 @@ background-color: inherit;
   border-bottom-left-radius: 4px;
   padding-left: 20px;
 }
+.email:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+}
 .page-footer {
   display: flex;
   justify-content: space-between;
@@ -531,6 +543,9 @@ background-color: inherit;
   flex-grow: 1;
 }
 .inner-header {
+  position: relative;
+  z-index: 1;
+  top: -2px;
   max-width: 1060px;
   min-height: 307px;
   background-color: #82B3D3;
@@ -605,6 +620,51 @@ background-color: inherit;
 .comfort-item:last-child {
   padding: 0;
 }
+.control-title {
+  margin-left: 16px;
+}
+.control-input{
+  appearance: none;
+  position: absolute
+}
+.control-mark{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 3px solid transparent;
+}
+.control-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/background/checkbox.svg);
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.control-mark::before:focus {
+  border-color: #83B3D3;
+}
+.control-input:checked + .control-mark::before {
+  opacity: 1;
+}
+.control-mark.radio {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.control-mark.radio::before {
+  background-color: #3F5E72;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
 .comfort-button {
   display: flex;
   flex-direction: column;
@@ -623,9 +683,65 @@ background-color: inherit;
   max-width: 143px;
   border: none;
   border-radius: 4px;
+  padding: 12px 20px;
+  border: 3px solid transparent;
+}
+.input-price:focus {
+  outline: none;
+  border-color: #83B3D3;;
 }
 .input-price::placeholder {
   text-align: right;
+}
+.group-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.min-price {
+  width: 143px;
+  padding: 12px 20px;
+  border-radius: 4px 0px 0px 4px;
+  background: #F2F2F2;
+  box-sizing: border-box;
+  margin-right: 2px;
+}
+.max-price {
+  width: 143px;
+  padding: 12px 20px;
+  border-radius: 0px 4px 4px 0px;
+  background: #F2F2F2;
+  box-sizing: border-box;
+}
+.range-scale {
+  width: 287px;
+  position: relative;
+  height: 4px;
+  margin-top: 48px;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+.range-bar {
+  width: 226px;
+  right: 61px;
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+.toggle-max {
+  top: -8px;
+  right: 0;
 }
 .catalog-prewiev {
   display: flex;
@@ -651,8 +767,25 @@ background-color: inherit;
   display: flex;
   font-size: 18px;
   line-height: 21px;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
-  border-color: #E5E5E5;
+  padding: 14px 20px;
+  background-image: url("../images/background/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+}
+.catalog-select:hover {
+  border-color: #68A2CA;
+}
+.catalog-select:focus {
+  outline: none;
+  border-color: #68A2CA;
+}
+.catalog-select:disabled{
+  border-color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: text;
 }
 .view-list {
   display: flex;
