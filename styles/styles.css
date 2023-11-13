@@ -255,7 +255,7 @@ font-family: "PT Sans", sans-serif;
 .hero {
   position: relative;
   z-index: 1;
-  top: 0;
+  top: -1px;
   background-image:url("../images/background/poligonal.svg"), url("../images/background/main-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom center, top center;
@@ -558,7 +558,7 @@ background-color: inherit;
 .inner-header {
   position: relative;
   z-index: 1;
-  top: -2px;
+  top: -1px;
   max-width: 1060px;
   min-height: 307px;
   background-color: #82B3D3;
@@ -567,7 +567,7 @@ background-color: inherit;
   background-size: cover;
   color: #FFFFFF;
   padding: 70px;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 .inner-title {
   font-size: 60px;
@@ -582,6 +582,7 @@ background-color: inherit;
   list-style: none;
   margin: 0;
   margin-bottom: 40px;
+  margin-top: 10px;
   padding: 0;
 }
 .breadcrumbs-arrow::after{
@@ -607,6 +608,8 @@ background-color: inherit;
 .comfort-filter {
   display: flex;
   justify-content: space-between;
+flex-wrap: nowrap;
+align-items: center;
 }
 .comfort-group {
   margin: 0;
@@ -649,10 +652,10 @@ background-color: inherit;
 .control-mark{
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: #FFFFFF;
-  border-radius: 6px;
+  border-radius: 4px;
   border: 3px solid transparent;
 }
 .control-mark::before {
@@ -725,6 +728,7 @@ background-color: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  opacity: 0.3;
   margin-left: 62px;
   margin-top: 30px;
 }
@@ -736,8 +740,9 @@ background-color: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  opacity: 0.3;
   margin-left: 208px;
-  margin-top: 30x;
+  margin-top: 30px;
 }
 .group-container {
   display: flex;
