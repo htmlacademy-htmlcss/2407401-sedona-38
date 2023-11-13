@@ -20,11 +20,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-font-family: "PT Sans", sans-serif;
-font-size: 22px;
-line-height: 26px;
-color: #333333;
-background-color: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #F2F2F2;
 }
 .container {
   background-color: #FFFFFF;
@@ -45,7 +46,7 @@ background-color: #F2F2F2;
   margin-left: 70px;
   margin-right: 30px;
   position: relative;
-  top: -2px;
+  top: 0;
   width: 140px;
   height: 70px;
   margin-bottom: -8px;
@@ -62,16 +63,16 @@ background-color: #F2F2F2;
   height: 64px;
 }
 .navigation-link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  height: 100%;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: inherit;
+  color: #000000;
   text-decoration: none;
-  height: 100%;
 }
 .navigation-link-current::before {
   position: absolute;
@@ -111,7 +112,7 @@ background-color: #F2F2F2;
 }
 .navigation-select {
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 19px;
   display: flex;
   align-items: center;
@@ -121,6 +122,7 @@ background-color: #F2F2F2;
   border-radius: 50%;
   background-color: #7DB54F;
   font-size: 10px;
+  line-height: 10px;
   color: #FFFFFF;
 }
 .navigation-item-user-button {
@@ -253,7 +255,7 @@ font-family: "PT Sans", sans-serif;
 .hero {
   position: relative;
   z-index: 1;
-  top: -1px;
+  top: 0;
   background-image:url("../images/background/poligonal.svg"), url("../images/background/main-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom center, top center;
@@ -265,19 +267,6 @@ font-family: "PT Sans", sans-serif;
   display: block;
   margin: 0 auto;
   padding-top: 51px;
-}
-.slogan-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-
-}
-.slogan-text {
-  font-size: 22px;
-line-height: 26px;
-text-align: center;
 }
 .advantages {
   padding-top: 69px;
@@ -342,10 +331,20 @@ margin: 0 auto;
 .service {
   padding-top: 64px;
 }
+.slogan-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
 .slogan-service {
   max-width: 505px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+.slogan-text {
+  text-align: center;
 }
 .text-service {
   max-width: 490px;
@@ -367,14 +366,10 @@ margin: 0 auto;
   padding-bottom: 81px;
   box-sizing: border-box;
 }
-.service-dark{
-background-color: inherit;
-}
 .service-item:first-child {
   background-image: url(../images/background/home-background.svg);
   background-repeat: no-repeat;
   background-position: top 81px center;
-
 }
 .service-item:nth-child(2) {
   background-image: url(../images/background/food-background.svg);
@@ -386,6 +381,9 @@ background-color: inherit;
   background-repeat: no-repeat;
   background-position: top 81px center;
 }
+.service-dark{
+background-color: inherit;
+}
 .service-title {
   font-size: 24px;
   line-height: 28px;
@@ -396,12 +394,12 @@ background-color: inherit;
   margin: 0 auto;
   padding-bottom: 30px;
   }
-  .service-text {
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    margin: 0 auto;
-  }
+.service-text {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+}
 .search {
   padding: 96px 0;
 }
@@ -431,6 +429,7 @@ background-color: inherit;
   }
 .slogan-subscribe {
   max-width: 404px;
+  font-weight: 700;
   color: #000000;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -470,8 +469,8 @@ background-color: inherit;
   display: flex;
   justify-content: space-between;
   padding: 0 70px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 35px;
 }
 .social-list {
   display: flex;
@@ -707,6 +706,7 @@ background-color: inherit;
   padding: 0;
 }
 .input-price {
+  position: relative;
   max-width: 143px;
   border: none;
   border-radius: 4px;
@@ -717,8 +717,27 @@ background-color: inherit;
   outline: none;
   border-color: #83B3D3;;
 }
-.input-price::placeholder {
-  text-align: right;
+.placeholder-min {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 62px;
+  margin-top: 30px;
+}
+.placeholder-max {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 208px;
+  margin-top: 30px;
 }
 .group-container {
   display: flex;
@@ -731,13 +750,16 @@ background-color: inherit;
   background: #F2F2F2;
   box-sizing: border-box;
   margin-right: 2px;
+  padding-right: 42px;
 }
 .max-price {
+  position: relative;
   width: 143px;
   padding: 12px 20px;
   border-radius: 0px 4px 4px 0px;
   background: #F2F2F2;
   box-sizing: border-box;
+  padding-right: 42px;
 }
 .range-scale {
   width: 287px;
@@ -966,8 +988,6 @@ background-color: inherit;
   margin-left: 0;
   color: #000000;
   background-color: #F2F2F2;
-}
-.pagination-current{
   pointer-events: none;
 }
 .pagination-point {
