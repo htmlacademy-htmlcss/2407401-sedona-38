@@ -184,20 +184,44 @@
     </button>
   </div>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="field-group">
+        <fieldset class="field-group">
           <label class="label-date" for="arrival">Дата Заезда:</label>
-          <input class="date-form-field field" type="text" id="arrival" name="arrival" value="27 апреля 2020" placeholder="Укажите дату">
+          <div class="date-form-container">
+          <input class="date-form-field" type="text" id="arrival" name="arrival" value="27 апреля 2020" placeholder="Укажите дату">
+          <p class="date-text error">Мы не можем отправить вас в прошлое.</p>
         </div>
-        <p>Мы не можем отправить вас в прошлое.</p>
-        <div class="field-group">
-          <label class="label-date" for="departure">Дата Выезда:</label>
-          <input class="date-form-field field" type="text" id="departure" name="departure" value="1 сентября 2023" placeholder="Укажите дату">
+        </fieldset>
+        <fieldset class="field-group">
+          <label class="label-date departure" for="departure">Дата Выезда:</label>
+          <div class="date-form-container">
+          <input class="date-form-field" type="text" id="departure" name="departure" value="1 сентября 2023" placeholder="Укажите дату">
+          <p class="date-text">На эти даты есть свободные номера. Пока есть.</p>
         </div>
-        <div class="field-group">
+        </fieldset>
+        <div class="amount-container">
+        <fieldset class="field-group-amount adult">
           <label class="label-amount" for="adults">Взрослые:</label>
+          <div class="count">
+            <button class="count-button" type="button">-</button>
           <input class="amount-form-field" id="adults" type="text" name="adults" value="2" placeholder="0">
-          <label class="label-amount children" for="children">Дети:</label>
+          <button class="count-button" type="button">+</button>
+        </div>
+        </fieldset>
+          <fieldset class="field-group-amount">
+          <label class="label-amount" for="children">Дети:</label>
+          <div class="overlay-container">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                </svg>
+            <div class="overlay"> <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+            </div>
+          </div>
+          <div class="count">
+          <button class="count-button" type="button">-</button>
           <input class="amount-form-field" id="children" type="text" name="children" value="2" placeholder="0">
+          <button class="count-button" type="button">+</button>
+        </div>
+        </fieldset>
       </div>
         <button class="button modal-search-button" type="submit">Найти</button>
       </form>
