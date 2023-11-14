@@ -309,7 +309,8 @@ margin-bottom: 90px;
 .advantages-dark {
   background-color: #83B3D333;
 }
-.advantages-title{
+.advantages-title {
+position: relative;
 font-size: 24px;
 line-height: 28px;
 font-weight: 700;
@@ -319,6 +320,25 @@ text-align: center;
 max-width: 175px;
 margin: 0 auto;
 padding-bottom: 62px;
+}
+.advantages-title::before {
+  content: '';
+  position: absolute;
+  bottom: 28px;
+  left: 58px;
+  width: 60px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.advantages-title.underlining {
+  position: relative;
+}
+.advantages-title.underlining::before {
+  content: '';
+  position: absolute;
+  bottom: 28px;
+  left: 58px;
+  width: 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 .advantages-text {
 font-size: 18px;
@@ -566,9 +586,130 @@ background-color: inherit;
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
+  border-radius: 30px;
 }
-.modal-auth {
-  width: 717px;
+.modal-content {
+  width: 577px;
+}
+.modal-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+.modal-close-button:focus-visible {
+  outline: none;
+  border-color: #83B3D3;
+}
+.modal-close-button svg {
+  fill:black;
+}
+.modal-close-button:active svg{
+  opacity: 0.3;
+}
+.modal-button-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.field-group {
+  display: flex;
+  justify-content:  space-between;
+  margin-bottom: 48px;
+}
+.label-date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.date-form-field {
+  position: relative;
+  width: 440px;
+  height: 48px;
+  padding: 20px 0;
+  padding-left: 12px;
+  background-color: #F2F2F2;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+}
+.date-form-field:hover {
+  background-color: #E6E6E6;
+}
+.date-form-field:focus-visible {
+  outline: none;
+  border-color: #68A2CA;
+}
+.date-form-field::placeholder {
+  font-family: "PT Sans", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+color: #000000;
+opacity: 0.6;
+}
+.date-form-field::before {
+  background-image: url("../images/background/c");
+}
+.label-amount {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.label-amount.children {
+  margin-left: 87px;
+}
+.amount-form-field {
+  width: 110px;
+  height: 48px;
+  background-color: #F2F2F2;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+.modal-search-button {
+  padding: 16px 265px;
+}
+
+
+
+
+
+.modal-container-close {
+  display: none;
 }
 .main-inner {
   flex-grow: 1;
@@ -761,7 +902,7 @@ background-color: inherit;
   color: #000000;
   opacity: 0.3;
   margin-left: 88px;
-  margin-top: 46px;
+  margin-top: 42px;
 }
 .placeholder-max {
   position: absolute;
@@ -773,14 +914,13 @@ background-color: inherit;
   color: #000000;
   opacity: 0.3;
   margin-left: 231px;
-  margin-top: 46px;
+  margin-top: 42px;
 }
 .group-container {
   display: flex;
   flex-wrap: wrap;
 }
 .min-price {
-  width: 143px;
   padding: 12px 20px;
   border-radius: 4px 0px 0px 4px;
   background: #F2F2F2;
@@ -790,7 +930,6 @@ background-color: inherit;
 }
 .max-price {
   position: relative;
-  width: 143px;
   padding: 12px 20px;
   border-radius: 0px 4px 4px 0px;
   background: #F2F2F2;
